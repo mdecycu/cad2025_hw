@@ -142,13 +142,16 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Otto_ninja << <a href='Otto_ninja.html'>Previous</a> <a href='Pyodide_ex.html'>Next</a> >> Pyodide_ex<br /><h1>Pyodide</h1>
-<p><a href="https://pyodide.org">Pyodide</a> 是一個將 <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> 解譯器和常用科學套件 (例如: <a href="https://numpy.org/">numpy</a>、<a href="https://scipy.org/">scipy</a>、<a href="https://matplotlib.org/">matplotlib</a> 等) 編譯成 <a href="https://webassembly.org/">WebAssembly</a>，可在瀏覽器中執行 <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> 程式的專案。</p>
-<p><a href="https://pyodide.org">Pyodide</a> 是將 <a href="https://github.com/python/cpython">CPython</a> 編譯為 <a href="https://webassembly.org/">WebAssembly</a>，可在瀏覽器或其他 <a href="https://webassembly.org/">WebAssembly</a> 環境中執行；而 <a href="https://github.com/python/cpython">CPython</a> 是標準的原生 <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> 解譯器，運行在作業系統上。換言之，<a href="https://pyodide.org">Pyodide</a> 是為在瀏覽器中執行 <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> 而設計的 <a href="https://github.com/python/cpython">CPython</a> 移植版本。<a href="https://pyodide.org">Pyodide</a> 可與 <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript">JavaScript</a> 雙向互動，讓 <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> 程式能呼叫 <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript">JavaScript</a> 函數並操作網頁元素，也能被 <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript">JavaScript</a> 呼叫執行 <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> 程式碼。</p>
+    <div id="tipue_search_content">Example2 << <a href='Example2.html'>Previous</a> <a href='png_files.html'>Next</a> >> png_files<br /><h1>Pyodide3</h1>
+<p>Pyodide3 則在 <a href="https://mde.tw/cp2025/content/Pyodide.html">Pyodide</a> 與 <a href="https://mde.tw/cp2025/content/Pyodide2.html">Pyodide2</a> 頁面架構下，進一步導入 <a href="https://gist.githubusercontent.com/mdecycu/ec4bb35dd0769e7a83d2a9fa57878a67/raw/9f43571ec070ea3e24b083525ee27275a96efcc8/robot_w_world.py">robot_w_world.py</a>，在既有的水平圍牆 <a href="https://mde.tw/cp2025/reeborg/src/images/north.png">north.png</a> 與垂直圍牆 <a href="https://mde.tw/cp2025/reeborg/src/images/east.png">east.png</a> 檔案之外，加入 <a href="https://mde.tw/cp2025/reeborg/src/images/carrot.png">carrot.png</a>、<a href="https://mde.tw/cp2025/reeborg/src/images/grass.png">grass.png</a> 與 <a href="https://mde.tw/cp2025/reeborg/src/images/pale_grass.png">pale_grass.png</a> 等圖檔。並且擴充可從 URL 讀進 json 格式的 world 變數功能，以便製作出更多元的場景任務，要求機器人執行。</p>
+<p>其中 src URL 變數，可以將網路上的機器人控制程式導入 Pyodide3 頁面外，world URL 變數則可以導入源自 <a href="https://mde.tw/reeborg">Reeborg</a> 機器人程式所設定的 json 格式場景。</p>
+<p>由於 Reeborg 系統中的 png 圖檔均非透明背景，<a href="https://gist.githubusercontent.com/mdecycu/ec4bb35dd0769e7a83d2a9fa57878a67/raw/9f43571ec070ea3e24b083525ee27275a96efcc8/robot_w_world.py">robot_w_world.py</a> 必須利用 HTML 中的 CANVAS，將關鍵的白色背景，以透明的方式顯示。</p>
+<p>src URL 變數讀進 <a href="https://gist.githubusercontent.com/mdecycu/ec4bb35dd0769e7a83d2a9fa57878a67/raw/8ac3ce859d6aec327b7859e091168270d6a951f7/pyodide2_turn_right.py">turn_right 程式</a>，而 world URL 變數則讀進 <a href="https://gist.githubusercontent.com/mdecycu/ec4bb35dd0769e7a83d2a9fa57878a67/raw/43517f3f54a5ac24d55d5a5cf8d316e6db2f3b65/harvest2.json">harvest2.json</a>，執行<a href="https://mde.tw/cp2025/content/Pyodide3.html?src=https://gist.githubusercontent.com/mdecycu/ec4bb35dd0769e7a83d2a9fa57878a67/raw/8ac3ce859d6aec327b7859e091168270d6a951f7/pyodide2_turn_right.py&amp;world=https://gist.githubusercontent.com/mdecycu/ec4bb35dd0769e7a83d2a9fa57878a67/raw/43517f3f54a5ac24d55d5a5cf8d316e6db2f3b65/harvest2.json">結果</a>。</p>
+<p>讀進 <a href="https://gist.githubusercontent.com/mdecycu/ec4bb35dd0769e7a83d2a9fa57878a67/raw/1b1c26eca7f5d772c6301bae865efaddb00a87bb/harvest3.json">harvest3.json</a>, 執行<a href="https://mde.tw/cp2025/content/Pyodide3.html?src=https://gist.githubusercontent.com/mdecycu/ec4bb35dd0769e7a83d2a9fa57878a67/raw/8ac3ce859d6aec327b7859e091168270d6a951f7/pyodide2_turn_right.py&amp;world=https://gist.githubusercontent.com/mdecycu/ec4bb35dd0769e7a83d2a9fa57878a67/raw/9f43571ec070ea3e24b083525ee27275a96efcc8/harvest3.json">結果</a>。</p>
 <p>
 <script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
 </p>
-<p><button id="version">version</button> <button id="hello_button">hello</button> <button id="add1to100">1 add to 100</button> <button id="robot1">機器人巡邏</button><button id="free_walk">自由行</button> <button id="numpy_ode">numpy_ode</button></p>
+<p><button id="version">version</button> <button id="hello_button">hello</button> <button id="add1to100">1 add to 100</button> <button id="robot1">機器人巡邏</button> <button id="free_walk">自由行</button> <button id="numpy_ode">numpy_ode</button></p>
 <!-- Ace Editor Scripts -->
 <p>
 <script src="./../cmsimde/static/ace/FileSaver.min.js"></script>
@@ -188,6 +191,16 @@ function updateUrlParam(key, value) {
 
 let pyodide, editor1, editor2;
 
+// 新增：把 robot_w_world.py 寫入 pyodide FS
+async function loadRobotModule() {
+  const robotUrl = "https://gist.githubusercontent.com/mdecycu/ec4bb35dd0769e7a83d2a9fa57878a67/raw/9f43571ec070ea3e24b083525ee27275a96efcc8/robot_w_world.py";
+  const r = await fetch(robotUrl);
+  if (!r.ok) throw new Error(`載入 robot.py 失敗: ${r.status}`);
+  const code = await r.text();
+  pyodide.FS.writeFile("/robot.py", code);
+  pyodide.runPython(`import sys; sys.path.append("/")`);  // 加入根目錄到 sys.path
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
   editor1 = ace.edit("kw_editor1");
   editor1.setTheme("ace/theme/chrome");
@@ -200,13 +213,17 @@ document.addEventListener("DOMContentLoaded", async () => {
   pyodide = await loadPyodide();
   await pyodide.loadPackage(["numpy", "scipy", "matplotlib", "micropip"]);
 
-  // 定義 hello() 模組
+  // 預先載入 robot.py
+  await loadRobotModule();
+
+  // 你現有的 hello() 定義
   const code = `
 def hello():
     print("Hello from custom module!")
 `;
   pyodide.runPython(code);
 
+  // 這是你之前其他按鈕用的 Gist 連結
   const GIST_ADD1TO100 =
     "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/" +
     "c48e37714f055c3a0027cbfef59e442a6ef659b9/from_1_add_to_100_1.py";
@@ -215,10 +232,11 @@ def hello():
     "98d582539545b3c9fbfa35dd3e605c506367618e/pyodide_ode_ex1.py";
   const PYODIDE_ROBOT_ANIMATION =
     "https://gist.githubusercontent.com/mdecycu/ec4bb35dd0769e7a83d2a9fa57878a67/raw/" +
-    "f3d75d08f2b90f4470342e91ee1e5c36b5f950bf/pyodide_robot_ex1.py";
+    "ff833d14181c7e270d37432aa8589f5ecf00e383/pyodide_walk_around2.py";
   const FREE_WALK = 
-    "https://gist.githubusercontent.com/mdecycu/ec4bb35dd0769e7a83d2a9fa57878a67/raw/" + "d1659628afe5d36a026ef305dc639f6be4c9f608/pyodide_robot_ex3.py"
+    "https://gist.githubusercontent.com/mdecycu/ec4bb35dd0769e7a83d2a9fa57878a67/raw/" + "2a66dceb4a1dbdd0c384d4d17453f1e4f03f2493/pyodide_free_walk2.py"
 
+  // 預設載入 GIST_ADD1TO100（或 URL 參數決定）
   const src = getUrlParam("src");
   if (src === PYODIDE_ROBOT_ANIMATION) {
     const robotCode = await fetchCode(PYODIDE_ROBOT_ANIMATION);
@@ -233,6 +251,7 @@ def hello():
 
   editor2.setValue("", -1);
 
+  // 按鈕事件
   document.getElementById("version").onclick = () => {
     const vcode = `
 import pyodide
@@ -301,19 +320,19 @@ print("scipy version:", scipy.__version__)
     clearOutput("kw_console2", "brython_div2");
 });
 
-// 處理兩個 Output 列數
-  document.getElementById("kw_output1").onclick = () => {
-    const ta = document.getElementById("kw_console1");
-    ta.rows = "15";
-    ta.cols = "70";
-    ta.scrollTop = 0;
-  };
-  document.getElementById("kw_output2").onclick = () => {
-    const ta = document.getElementById("kw_console2");
-    ta.rows = "15";
-    ta.cols = "70";
-    ta.scrollTop = 0;
-  };
+// 調整 output textarea 行數
+document.getElementById("kw_output1").onclick = () => {
+  const ta = document.getElementById("kw_console1");
+  ta.rows = "15";
+  ta.cols = "70";
+  ta.scrollTop = 0;
+};
+document.getElementById("kw_output2").onclick = () => {
+  const ta = document.getElementById("kw_console2");
+  ta.rows = "15";
+  ta.cols = "70";
+  ta.scrollTop = 0;
+};
 
 async function fetchCode(url) {
   const r = await fetch(url);
@@ -345,12 +364,12 @@ sys.stderr = JsWriter()
   try {
     await pyodide.runPythonAsync(editor.getValue());
   } catch (e) {
-    document.getElementById(consoleId).value += "\n錯誤：" + e.toString();
+    document.getElementById(consoleId).value += "\\n錯誤：" + e.toString();
   }
 }
 </script>
 </p>
-<br />Otto_ninja << <a href='Otto_ninja.html'>Previous</a> <a href='Pyodide_ex.html'>Next</a> >> Pyodide_ex</div>
+<br />Example2 << <a href='Example2.html'>Previous</a> <a href='png_files.html'>Next</a> >> png_files</div>
         
     <!-- footer -->
       <div class="container">
